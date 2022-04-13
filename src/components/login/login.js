@@ -21,7 +21,7 @@ const Login = ({ updateUser}) => {
     }
 
     const login = () => {
-        axios.post("http://localhost:9002/login", user)
+        axios.post("https://4c66-103-104-225-230.ngrok.io/login", user)
         .then(res => {
             alert(res.data.message)
             updateUser(res.data.user)
